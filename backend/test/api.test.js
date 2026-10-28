@@ -19,7 +19,7 @@ describe('Recipe API Tests', () => {
         .get('/api/recipes')
         .expect(200);
 
-      expect(Array.isArray(response.body)).toBe(false);
+      expect(Array.isArray(response.body)).toBe(true);
       expect(response.body.length).toBeGreaterThan(0);
     });
 
